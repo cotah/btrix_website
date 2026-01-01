@@ -3,7 +3,7 @@ import "./ChatbotWidget.css";
 import MessageList from "./MessageList";
 import InputArea from "./InputArea";
 import LanguageChip from "./LanguageChip";
-import { chatAPI } from "../services/api.js";
+import { chatAPI } from "../../lib/chatbot/api.js";
 
 const ChatbotWidget = ({ theme = {}, isPremium = true }) => { // Enable language selector by default
   const [isOpen, setIsOpen] = useState(false);
