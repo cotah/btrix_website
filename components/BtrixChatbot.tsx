@@ -60,7 +60,7 @@ export default function BtrixChatbot() {
         },
       ])
     }
-  }, [isOpen])
+  }, [isOpen, messages.length])
 
   const handleSendMessage = async (message: string) => {
     if (!message.trim()) return

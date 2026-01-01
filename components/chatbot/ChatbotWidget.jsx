@@ -35,7 +35,7 @@ const ChatbotWidget = ({ theme = {}, isPremium = true }) => { // Enable language
         },
       ]);
     }
-  }, [isOpen]);
+  }, [isOpen, messages.length]);
 
   // Force English as default language
   useEffect(() => {
