@@ -1,0 +1,6 @@
+{
+  "framework": "nextjs",
+  "env": {
+    "NEXT_PUBLIC_CHATBOT_API_URL": "https://ai-chatbot-plataform.onrender.com"
+  }
+}
