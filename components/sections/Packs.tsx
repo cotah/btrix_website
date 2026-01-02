@@ -32,10 +32,10 @@ export default function Packs() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className={`relative bg-white rounded-xl shadow-lg hover:shadow-xl transition-all border-2 ${
                   'recommended' in pack && pack.recommended ? 'border-btrix-neon scale-105 lg:scale-110' : 'border-btrix-silver/20'
-                } overflow-hidden group`}
+                } overflow-visible group`}
               >
                 {'recommended' in pack && pack.recommended && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-btrix-neon text-btrix-blue px-4 py-1 rounded-full text-sm font-semibold z-20">
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-btrix-neon text-btrix-blue px-6 py-2 rounded-full text-sm font-semibold z-30 whitespace-nowrap shadow-lg">
                     ⭐ Most Popular
                   </div>
                 )}

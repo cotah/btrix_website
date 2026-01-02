@@ -36,12 +36,12 @@ export default function Bundles() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className={`relative bg-gradient-to-br from-btrix-blue/5 to-btrix-neon/5 rounded-xl shadow-lg hover:shadow-xl transition-all border-2 overflow-hidden group ${
+                className={`relative bg-gradient-to-br from-btrix-blue/5 to-btrix-neon/5 rounded-xl shadow-lg hover:shadow-xl transition-all border-2 overflow-visible group flex flex-col ${
                   bundle.bestSeller ? 'border-btrix-neon scale-105' : 'border-btrix-silver/20'
                 }`}
               >
                 {bundle.bestSeller && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-btrix-neon text-btrix-blue px-4 py-1 rounded-full text-sm font-semibold z-20">
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-btrix-neon text-btrix-blue px-6 py-2 rounded-full text-sm font-semibold z-30 whitespace-nowrap shadow-lg">
                     ⭐ Best Seller
                   </div>
                 )}
@@ -51,7 +51,7 @@ export default function Bundles() {
                   <div className="w-full h-full robot-silhouette" />
                 </div>
 
-                <div className="p-8 relative z-10">
+                <div className="p-8 relative z-10 flex flex-col flex-grow">
                   <h3 className="text-2xl font-display font-bold text-btrix-blue mb-6">
                     {bundle.name}
                   </h3>
@@ -90,7 +90,7 @@ export default function Bundles() {
                     </p>
                   </div>
 
-                  <p className="text-sm text-btrix-graphite mb-6 leading-relaxed">
+                  <p className="text-sm text-btrix-graphite mb-6 leading-relaxed flex-grow">
                     {bundle.benefit}
                   </p>
 

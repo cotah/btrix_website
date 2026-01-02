@@ -40,26 +40,51 @@ export default function ValueProposition() {
             BTRIX helps companies:
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-            {benefits.map((benefit, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: index * 0.1 }}
-                className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all border border-btrix-silver/20 hover:border-btrix-neon/50"
-              >
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-btrix-neon/20 rounded-full flex items-center justify-center flex-shrink-0">
-                    <svg className="w-6 h-6 text-btrix-neon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
+          <div className="mb-12">
+            {/* Primeira linha - 3 caixas */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+              {benefits.slice(0, 3).map((benefit, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: index * 0.1 }}
+                  className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all border border-btrix-silver/20 hover:border-btrix-neon/50"
+                >
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 bg-btrix-neon/20 rounded-full flex items-center justify-center flex-shrink-0">
+                      <svg className="w-6 h-6 text-btrix-neon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <p className="text-btrix-graphite font-semibold text-lg">{benefit}</p>
                   </div>
-                  <p className="text-btrix-graphite font-semibold text-lg">{benefit}</p>
-                </div>
-              </motion.div>
-            ))}
+                </motion.div>
+              ))}
+            </div>
+            {/* Segunda linha - 2 caixas centralizadas */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+              {benefits.slice(3).map((benefit, index) => (
+                <motion.div
+                  key={index + 3}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: (index + 3) * 0.1 }}
+                  className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all border border-btrix-silver/20 hover:border-btrix-neon/50"
+                >
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 bg-btrix-neon/20 rounded-full flex items-center justify-center flex-shrink-0">
+                      <svg className="w-6 h-6 text-btrix-neon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <p className="text-btrix-graphite font-semibold text-lg">{benefit}</p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
           </div>
 
           <motion.div

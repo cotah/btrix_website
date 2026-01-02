@@ -36,12 +36,12 @@ export default function Agents() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="bg-gradient-to-r from-btrix-neon/20 to-btrix-accent/20 border-2 border-btrix-neon/50 rounded-xl p-6 mb-12"
+            className="bg-gradient-to-r from-btrix-neon/20 to-btrix-accent/20 border-2 border-btrix-neon/50 rounded-xl p-6 mb-12 max-w-4xl mx-auto"
           >
-            <h3 className="text-xl font-display font-bold text-btrix-blue mb-4">
+            <h3 className="text-xl font-display font-bold text-btrix-blue mb-4 text-center">
               Important Rules
             </h3>
-            <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 max-w-3xl mx-auto">
               {rules.map((rule, index) => (
                 <li key={index} className="flex items-start gap-2 text-btrix-graphite">
                   <span className="text-btrix-neon mt-1">•</span>
