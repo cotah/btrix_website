@@ -4,6 +4,7 @@ import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import BtrixChatbot from '@/components/BtrixChatbot'
+import WhatsAppHandler from '@/components/WhatsAppHandler'
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -42,6 +43,7 @@ export default function RootLayout({
         </main>
         <Footer />
         <BtrixChatbot />
+        <WhatsAppHandler />
       </body>
     </html>
   )

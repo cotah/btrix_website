@@ -95,8 +95,8 @@ export default function Bundles() {
                   </p>
 
                   <button
-                    onClick={scrollToContact}
-                    className="w-full bg-btrix-neon text-btrix-blue px-6 py-3 rounded-lg font-semibold hover:bg-btrix-accent transition-all transform hover:scale-105"
+                    className="w-full bg-btrix-neon text-btrix-blue px-6 py-3 rounded-lg font-semibold hover:bg-btrix-accent transition-all transform hover:scale-105 wa-btn"
+                    data-wa-msg={`Oi! Quero assinar o bundle ${bundle.name}. Pode me explicar como funciona?`}
                   >
                     I want this bundle
                   </button>

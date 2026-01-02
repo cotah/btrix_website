@@ -85,7 +85,7 @@ export default function Agents() {
                     </div>
                   </div>
 
-                  <div>
+                  <div className="mb-4">
                     <p className="text-sm font-semibold text-btrix-blue mb-2">Functions</p>
                     <ul className="space-y-1">
                       {agent.functions.map((func, idx) => (
@@ -96,6 +96,13 @@ export default function Agents() {
                       ))}
                     </ul>
                   </div>
+                  
+                  <button
+                    className="w-full bg-btrix-neon text-btrix-blue px-4 py-2 rounded-lg font-semibold text-sm hover:bg-btrix-accent transition-all wa-btn"
+                    data-wa-msg={`Oi! Quero adicionar o ${agent.name} ao meu pacote BTRIX. Pode me explicar como funciona?`}
+                  >
+                    Adicionar Agent
+                  </button>
                 </div>
               </motion.div>
             ))}

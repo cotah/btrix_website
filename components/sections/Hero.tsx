@@ -57,8 +57,8 @@ export default function Hero() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
             <button
-              onClick={() => scrollToSection('#contact')}
-              className="w-full sm:w-auto bg-btrix-neon text-btrix-blue px-8 py-4 rounded-lg font-semibold text-lg hover:bg-btrix-accent transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
+              className="w-full sm:w-auto bg-btrix-neon text-btrix-blue px-8 py-4 rounded-lg font-semibold text-lg hover:bg-btrix-accent transition-all transform hover:scale-105 shadow-lg hover:shadow-xl wa-btn"
+              data-wa-msg="Oi! Vim pelo site da BTRIX e quero entender como funciona. Gostaria de solicitar um diagnóstico."
               aria-label="Request a Diagnosis"
             >
               Request a Diagnosis

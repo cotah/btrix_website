@@ -67,11 +67,18 @@ export default function VoiceAI() {
               </div>
             </div>
 
-            <div className="bg-yellow-500/20 border border-yellow-500/50 rounded-lg p-4">
+            <div className="bg-yellow-500/20 border border-yellow-500/50 rounded-lg p-4 mb-6">
               <p className="text-sm font-semibold text-yellow-200">
                 ⚠️ {voiceAI.note}
               </p>
             </div>
+            
+            <button
+              className="w-full bg-btrix-neon text-btrix-blue px-8 py-4 rounded-lg font-semibold text-lg hover:bg-btrix-accent transition-all transform hover:scale-105 shadow-lg hover:shadow-xl wa-btn"
+              data-wa-msg="Oi! Quero adicionar o Voice AI ao meu pacote BTRIX. Pode me explicar como funciona e os valores?"
+            >
+              Quero o Voice AI
+            </button>
           </div>
         </motion.div>
       </div>

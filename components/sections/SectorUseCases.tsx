@@ -44,7 +44,7 @@ export default function SectorUseCases() {
                     </h3>
                   </div>
 
-                  <ul className="space-y-2">
+                  <ul className="space-y-2 mb-4">
                     {sector.useCases.map((useCase, idx) => (
                       <li key={idx} className="text-sm text-btrix-graphite flex items-start gap-2">
                         <span className="text-btrix-neon mt-1">•</span>
@@ -52,6 +52,13 @@ export default function SectorUseCases() {
                       </li>
                     ))}
                   </ul>
+                  
+                  <button
+                    className="w-full bg-btrix-neon text-btrix-blue px-4 py-2 rounded-lg font-semibold text-sm hover:bg-btrix-accent transition-all wa-btn"
+                    data-wa-msg={`Oi! Tenho um negócio no setor de ${sector.name} e quero automatizar operações. Como a BTRIX pode me ajudar?`}
+                  >
+                    Falar com BTRIX
+                  </button>
                 </div>
               </motion.div>
             ))}

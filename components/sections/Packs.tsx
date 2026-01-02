@@ -71,7 +71,7 @@ export default function Packs() {
                     {pack.description}
                   </p>
 
-                  <div className="space-y-3 border-t border-btrix-silver/20 pt-6">
+                  <div className="space-y-3 border-t border-btrix-silver/20 pt-6 mb-6">
                     <div>
                       <p className="text-sm font-semibold text-btrix-blue mb-1">Best for</p>
                       <p className="text-sm text-btrix-graphite">{pack.bestFor}</p>
@@ -85,6 +85,13 @@ export default function Packs() {
                       <p className="text-sm text-btrix-graphite">{pack.idealFor}</p>
                     </div>
                   </div>
+                  
+                  <button
+                    className="w-full bg-btrix-neon text-btrix-blue px-6 py-3 rounded-lg font-semibold hover:bg-btrix-accent transition-all transform hover:scale-105 wa-btn"
+                    data-wa-msg={`Oi! Quero assinar o ${pack.name}. Pode me explicar o que inclui e como funciona?`}
+                  >
+                    Quero este pacote
+                  </button>
                 </div>
               </motion.div>
             ))}
